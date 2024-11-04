@@ -1,0 +1,66 @@
+MODEL:
+  # Transformer Encoder
+  DIM_MODEL: 96
+  DIM_FEEDFORWARD: 192
+  N_HEAD: 1
+  ENCODER_LAYERS: 6
+  ATTENTION_ACTIVATION: relu
+  POS_EMBEDDING: sine
+  # #
+  INIT_WEIGHTS: true
+  NAME: transpose_h
+  NUM_JOINTS: 14
+
+  TARGET_TYPE: gaussian
+  IMAGE_SIZE:
+  - 288
+  - 384
+  HEATMAP_SIZE:
+  - 72
+  - 96
+  SIGMA: 2
+  EXTRA:
+    PRETRAINED_LAYERS:
+    - 'conv1'
+    - 'bn1'
+    - 'conv2'
+    - 'bn2'
+    - 'layer1'
+    - 'transition1'
+    - 'stage2'
+    - 'transition2'
+    - 'stage3'
+    FINAL_CONV_KERNEL: 1
+    STAGE2:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 2
+      BLOCK: BASIC
+      NUM_BLOCKS:
+      - 4
+      - 4
+      NUM_CHANNELS:
+      - 48
+      - 96
+      FUSE_METHOD: SUM
+    STAGE3:
+      NUM_MODULES: 4
+      NUM_BRANCHES: 3
+      BLOCK: BASIC
+      NUM_BLOCKS:
+      - 4
+      - 4
+      - 4
+      NUM_CHANNELS:
+      - 48
+      - 96
+      - 192
+      FUSE_METHOD: SUM
+TEST:
+  BLUR_KERNEL: 11
+  BATCH_SIZE_PER_GPU: 1
+  BBOX_THRE: 1.0
+  IMAGE_THRE: 0.0
+  IN_VIS_THRE: 0.2
+  MODEL_FILE: ./application/models/model_best.pth
+
+
