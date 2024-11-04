@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image with Keypoints</title>
+
+</head>
+<body>
+    <h2>Processed Image</h2>
+    <img src="{{ image_path }}" alt="Processed Image">
+
+    <h2>Keypoints Coordinates</h2>
+    <ul>
+        {% for coord in coordinates %}
+            <li>{{ coord }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
