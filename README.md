@@ -34,6 +34,8 @@ activate 環境
 
 `$ conda activate kpdt`
 
+CPU版本的pytorch
+
 `$ conda install pytorch torchvision torchaudio cpuonly -c pytorch`
 
 從GitHub複製檔案至VM
