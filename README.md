@@ -1,11 +1,11 @@
 # Keypoint Detection in Cephalometric X-ray Images
 ## Flask web API for Cephalometric X-ray Keypoint Detection
 
-### create GCP VM for Ubuntu 20.04 LTS
+### Create GCP VM for Ubuntu 20.04 LTS
 `~$ sudo apt update`
-### 下載 Miniconda
+下載 Miniconda
 `~$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
-### 安裝 Miniconda
+安裝 Miniconda
 `~$ bash ./Miniconda3-latest-Linux-x86_64.sh`
 ### 可以選擇移除
 `~$ rm ./Miniconda3-latest-Linux-x86_64.sh`
