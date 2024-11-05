@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for
+from flask_cors import CORS
 import cv2
 import os
 import numpy as np
@@ -12,6 +13,7 @@ app = Flask(
     static_folder = 'result', # 靜態檔案的資料夾名稱
     static_url_path = '/'     # 靜態檔案的對應的網址路徑
 ) 
+CORS(app)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['PROCESSED_FOLDER'] = './application/result'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)  
