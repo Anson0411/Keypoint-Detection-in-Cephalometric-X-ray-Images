@@ -64,3 +64,13 @@ pth: https://drive.google.com/file/d/1Ao1sFYhp1fvJ1dJMC6mn540VrFASXg8w/view?usp=
 
 ###  使用Gunicorn將API背景執行
 
+`pip install gunicorn`
+
+`sudo gunicorn -w 1 -b 0.0.0.0:8000 run:app`
+
+移除
+
+`ps -ef | grep gunicorn`
+
+`sudo kill -9 <PID>`
+
