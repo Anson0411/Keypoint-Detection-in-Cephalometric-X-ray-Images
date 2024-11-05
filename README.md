@@ -42,19 +42,18 @@ activate 環境
 
 `$ cd Keypoint-Detection-in-Cephalometric-X-ray-Images/`
 
-`$ conda install --file requirements.txt`
-
-
 使用conda安裝requirement.txt (找不到安裝包就用pip安裝)
 
 `while read requirement; do conda install --yes $requirement || pip install $requirement; done < requirements.txt`
 
-如果在運行時無法找到 libGL.so.1 這個共享庫
-
-`sudo apt-get install libgl1-mesa-glx libgl1-mesa-dri`
-
 從Google雲端下載訓練好的模型
 `gdown https://drive.google.com/uc?id=1Ao1sFYhp1fvJ1dJMC6mn540VrFASXg8w`
+
+如果在運行時無法找到 libGL.so.1 這個共享庫
+
+`sudo apt install libgl1-mesa-glx libgl1-mesa-dri`
+
+
 
 
 
