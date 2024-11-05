@@ -29,10 +29,16 @@
 
 ### 創建環境
 `$ conda create -n kpdt python=3.9`
+activate 環境
 
+`$ conda activate kpdt`
+`$ conda install pytorch torchvision torchaudio cpuonly -c pytorch`
 從GitHub複製檔案至VM
 
 `$ git clone https://github.com/Anson0411/Keypoint-Detection-in-Cephalometric-X-ray-Images.git`
+`$ cd Keypoint-Detection-in-Cephalometric-X-ray-Images/`
+`$ conda install --file requirements.txt`
+
 
 
 
