@@ -58,6 +58,7 @@ CPU版本的pytorch
 
 
 查看監聽端口
+
 `$ sudo lsof -i -P -n | grep LISTEN`
 
 pth: https://drive.google.com/file/d/1Ao1sFYhp1fvJ1dJMC6mn540VrFASXg8w/view?usp=sharing
