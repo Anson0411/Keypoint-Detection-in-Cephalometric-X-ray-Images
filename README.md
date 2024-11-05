@@ -5,11 +5,11 @@
 ### Create GCP VM for Ubuntu 20.04 LTS
 1. 更新 
 
-`~$ sudo apt update`
+ `~$ sudo apt update`
 
 2. 下載 Miniconda
 
-`~$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+ `~$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 
 3. 安裝 Miniconda
 
