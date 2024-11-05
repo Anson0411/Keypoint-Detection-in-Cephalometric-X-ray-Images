@@ -49,6 +49,7 @@ CPU版本的pytorch
 `while read requirement; do conda install --yes $requirement || pip install $requirement; done < requirements.txt`
 
 從Google雲端下載訓練好的模型
+
 `gdown https://drive.google.com/uc?id=1Ao1sFYhp1fvJ1dJMC6mn540VrFASXg8w`
 
 如果在運行時無法找到 libGL.so.1 這個共享庫
