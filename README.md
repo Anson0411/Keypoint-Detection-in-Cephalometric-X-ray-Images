@@ -40,6 +40,11 @@ activate 環境
 `$ conda install --file requirements.txt`
 
 
+使用conda安裝requirement.txt (找不到安裝包就用pip安裝)
+
+`while read requirement; do conda install --yes $requirement || pip install $requirement; done < requirements.txt`
+
+
 
 
 
