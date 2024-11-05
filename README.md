@@ -54,6 +54,9 @@ activate 環境
 `sudo apt install libgl1-mesa-glx libgl1-mesa-dri`
 
 
+查看監聽端口
+`$ sudo lsof -i -P -n | grep LISTEN`
+
 
 
 
